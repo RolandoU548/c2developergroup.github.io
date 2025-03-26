@@ -19,7 +19,13 @@ export const MarqueeComponent = ({
   reverse = false,
 }: MarqueeComponentProps) => {
   const cardsTop = logosTop?.map((item: MarqueeLogo, index: number) => {
-    const logo = <img key={index} src={item.src} className={item.class} />;
+    const logo = (
+      <img
+        key={index}
+        src={"/c2developergroup.github.io/" + item.src}
+        className={item.class}
+      />
+    );
     if (item.href !== undefined) {
       return (
         <a href={item.href} target="_blank">
