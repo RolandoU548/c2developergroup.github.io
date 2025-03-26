@@ -1,0 +1,60 @@
+---
+import C2AnimationScripts from "../components/AnimationScripts.astro";
+import C2Footer from "../components/Footer.astro";
+import C2Navbar from "../components/Navbar.astro";
+
+import "../css/main.scss";
+import "@splidejs/splide/css";
+
+const currentPath = Astro.url.pathname;
+const hideNavbarOn = ["/central-madeirense", "/otra-pagina", "/tercera-pagina"];  // Agrega aquí todas las rutas donde no quieres mostrar el navbar
+const showNavbar = !hideNavbarOn.includes(currentPath);
+---
+
+<html lang="es" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/c2logosquare.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C² Developer Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Smooch+Sans:wght@500;700;800;900&display=swap"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    /> -->
+  </head>
+  <body class="bg-white overflow-x-clip">
+    <div id="root">
+      {showNavbar && <C2Navbar />}
+      <div id="content">
+        <slot />
+      </div>
+      <C2Footer />
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      is:inline
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.5.3"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.4"></script>
+    <C2AnimationScripts />
+  </body>
+</html>

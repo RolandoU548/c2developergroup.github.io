@@ -1,0 +1,143 @@
+<html lang="es" class="bg-[#05368b]">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/c2logosquare.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C² Developer Group | Mercantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Smooch+Sans:wght@500;700;800;900&display=swap"
+    />
+    <style>
+      select {
+        appearance: none; /* Oculta la flecha del select en todos los navegadores */
+        -webkit-appearance: none; /* Oculta la flecha en Safari y Chrome */
+        -moz-appearance: none; /* Oculta la flecha en Firefox */
+        background: transparent; /* Asegura que el fondo es transparente */
+      }
+
+      .no-arrow {
+        position: relative;
+        background-color: transparent;
+      }
+      
+      /* Estilos para los placeholders */
+      ::placeholder {
+        color: white;
+        opacity: 1; /* Asegura que el color sea aplicado */
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white;
+      }
+
+      input::placeholder { /* También para inputs específicos */
+        color: white;
+        opacity: 1;
+      }
+
+      select::placeholder { /* Placeholder para select (aunque select no usa placeholder, lo añadimos por seguridad) */
+        color: white;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="w-full h-full">
+      <div class="w-full h-auto flex justify-end">
+        <div class="grid grid-cols-1 mt-40 mr-[40%] ml-[10%] gap-10 absolute">
+          <div>
+            <h2 class="text-white text-7xl font-bold">
+              Ahorra de manera <br />
+              <span class="text-orange-500"> efectiva y segura </span>
+            </h2>
+          </div>
+          <p class="text-white text-xl font-light">
+            Comienza a ahorrar hoy mismo y descubre cómo el <br /> banco Mercantil
+            puede ayudarte a alcanzar <br /> tus sueños financieros
+          </p>
+        </div>
+        <img src="/mercantillandingpageman.png" class="w-6/12 -z-10" />
+      </div>
+    </section>
+    <section
+      class="bg-white text-[#05368b] flex justify-center gap-[20%] py-10 content-center"
+    >
+      <div class="flex align-middle z-10">
+        <p class="m-auto text-xl ml-64">
+          Con nuestra amplia gama de opciones de <br /> ahorro, puedes personalizar
+        </p>
+      </div>
+      <div>
+        <button class="bg-[#05368b] hover:bg-blue-950 transition duration-300 text-white rounded-3xl py-2 px-4 mr-48 z-10"
+          >conocer más</button
+        >
+      </div>
+      <div class="absolute">
+        <img
+          src="/mapamercantil.png"
+          class="mix-blend-difference opacity-10 -mt-20"
+        />
+      </div>
+    </section>
+    <section class="py-40">
+      <h2 class="text-white text-6xl font-bold text-center">
+        Ingresa de forma segura
+      </h2>
+    </section>
+    <section>
+      <div class="flex">
+        <div class="w-1/4 p-40 bg-center bg-cover bg-[url('/limitesdeoperacionesmercantil.jpg')] hover:bg-[url('/limitesdeoperacionesmercantilhover.jpg')] transition-all duration-300 hover:scale-110 cursor-pointer hover:z-10">
+        </div>
+        <div class="w-1/4 p-40 bg-center bg-cover bg-[url('/mercantilenlineapersona.jpg')] hover:bg-[url('/mercantilenlineapersonahover.jpg')] transition-all duration-300 hover:scale-110 cursor-pointer hover:z-10">
+        </div>
+        <div class="w-1/4 p-40 bg-center bg-cover bg-[url('/portaldepagosmercantil.jpg')] hover:bg-[url('/portaldepagosmercantilhover.jpg')] transition-all duration-300 hover:scale-110 cursor-pointer hover:z-10">
+        </div>
+        <div class="w-1/4 p-40 bg-center bg-cover bg-[url('/inversionesmercantil.jpg')] hover:bg-[url('/inversionesmercantilhover.jpg')] transition-all duration-300 hover:scale-110 cursor-pointer hover:z-10">
+        </div>
+      </div>
+    </section>
+    <section class="px-16 pt-36 pb-16 flex justify-between gap-20">
+      <div class="w-[45%]">
+        <h2 class="text-white text-center text-6xl font-bold">
+          Adquiere la nueva <br />
+          <span class="text-orange-500"> Tarjeta Premium </span>
+        </h2>
+        <div class="mt-10 no-arrow">
+          <select
+            class="border border-white rounded-2xl pl-5 bg-transparent text-white p-3 w-full"
+            required
+          >
+            <option disabled selected class="text-white">SEDES MERCANTIL</option>
+            <option value="">La Castellana</option>
+            <option value="">CCCT</option>
+            <option value="">
+              N/A
+            </option>
+            <option value="">N/A</option>
+          </select>
+        </div>
+        <input
+              placeholder="CÉDULA"
+              maxlength="100"
+              class="border border-white rounded-2xl pl-5 bg-transparent text-white p-3 w-full mt-5"
+            />
+            <input
+            placeholder="CORREO ELECTRÓNICO"
+            maxlength="100"
+            class="border border-white rounded-2xl pl-5 bg-transparent text- p-3 w-full mt-5"
+          />
+          <button class="rounded-2xl pl-5 bg-white text-[#05368b] p-3 w-full mt-5">Enviar</button>
+      </div>
+      <div class="w-1/2">
+       <img src="/tarjetamercantil.png" class="mt-12">
+      </div>
+    </section>
+  </body>
+</html>

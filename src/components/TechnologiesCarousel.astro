@@ -1,0 +1,282 @@
+---
+
+---
+
+<div class="flex justify-center">
+  <c2dev-techs-carousel
+    class="splide flex justify-center relative md:max-w-[20%] md:w-[20%] max-w-[10%] w-[10%]"
+    role="group"
+    aria-label="Technologías"
+    data-direction="ttb"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/00-00-html5.webp"
+          />
+        </li>
+        <!-- html -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/00-01-css3.webp"
+          />
+        </li>
+        <!-- javascript -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/00-02-js.webp"
+          />
+        </li>
+        <!-- css -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/00-03-tailwind.webp"
+          />
+        </li>
+        <!-- tailwind -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/00-04-vite.webp"
+          />
+        </li>
+        <!-- vite -->
+      </ul>
+    </div>
+  </c2dev-techs-carousel>
+  <c2dev-techs-carousel
+    class="splide flex justify-center relative md:max-w-[20%] md:w-[20%] max-w-[10%] w-[10%]"
+    role="group"
+    aria-label="Technologías"
+    data-direction="btt"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/01-00-astro.webp"
+          />
+        </li>
+        <!-- astro -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/01-01-react.webp"
+          />
+        </li>
+        <!-- react -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/01-02-nodejs.webp"
+          />
+        </li>
+        <!-- nodejs -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/01-03-jwt.webp"
+          />
+        </li>
+        <!-- jwt -->
+      </ul>
+    </div>
+  </c2dev-techs-carousel>
+  <c2dev-techs-carousel
+    class="splide flex justify-center relative md:max-w-[20%] md:w-[20%] max-w-[10%] w-[10%]"
+    role="group"
+    aria-label="Technologías"
+    data-direction="ttb"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/02-00-python.webp"
+          />
+        </li>
+        <!-- python -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/02-01-flask.webp"
+          />
+        </li>
+        <!-- flask -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/02-02-oidc.webp"
+          />
+        </li>
+        <!-- docker -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/02-03-docker.webp"
+          />
+        </li>
+        <!-- sqlalchemy -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/02-04-sqlalchemy.webp"
+          />
+        </li>
+        <!-- bcrypt -->
+      </ul>
+    </div>
+  </c2dev-techs-carousel>
+  <c2dev-techs-carousel
+    class="splide flex justify-center relative md:max-w-[20%] md:w-[20%] max-w-[10%] w-[10%]"
+    role="group"
+    aria-label="Technologías"
+    data-direction="btt"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/03-00-rust.webp"
+          />
+        </li>
+        <!-- dart -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/03-01-dart.webp"
+          />
+        </li>
+        <!-- flutter -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/03-02-flutter.webp"
+          />
+        </li>
+        <!-- rust -->
+        <li class="splide__slide flex justify-center">
+          <img
+            class="aspect-square rounded-[50%]"
+            src="/carousel-tech/03-03-github.webp"
+          />
+        </li>
+        <!-- github -->
+      </ul>
+    </div>
+  </c2dev-techs-carousel>
+</div>
+
+<script>
+  import {
+    Splide,
+    type Options as SplideOptions,
+    type ResponsiveOptions as SplideResponsiveOptions,
+  } from "@splidejs/splide";
+  import { Intersection } from "@splidejs/splide-extension-intersection";
+  import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+
+  const optionsBreakpoints: Record<number, SplideResponsiveOptions> = {
+    2100: {
+      // 4xl
+      gap: "5rem",
+      width: "15%",
+    },
+    1800: {
+      // 3xl
+      gap: "5rem",
+      width: "15%",
+    },
+    1536: {
+      // 2xl
+      gap: "5rem",
+      width: "15%",
+    },
+    1280: {
+      // xl
+      gap: "5rem",
+      width: "15%",
+    },
+    1024: {
+      // lg
+      gap: "5rem",
+      width: "22.5%",
+    },
+    768: {
+      // md
+      gap: "5rem",
+      width: "50%",
+    },
+    640: {
+      // sm
+      gap: "5rem",
+      width: "50%",
+    },
+  };
+
+  const optionsTtb: SplideOptions = {
+    type: "loop",
+    direction: "ttb",
+    focus: "center",
+    height: "80vh",
+    width: "15%",
+    autoWidth: true,
+    arrows: false,
+    gap: "5rem",
+    perPage: 3,
+    pagination: false,
+    autoScroll: {
+      speed: -1,
+    },
+    breakpoints: optionsBreakpoints,
+  };
+
+  const optionsBtt: SplideOptions = {
+    type: "loop",
+    direction: "ttb",
+    focus: "center",
+    height: "80vh",
+    width: "15%",
+    autoWidth: true,
+    arrows: false,
+    gap: "5rem",
+    perPage: 3,
+    pagination: false,
+    autoScroll: {
+      speed: 1,
+    },
+    breakpoints: optionsBreakpoints,
+  };
+
+  class C2TechsCarousel extends HTMLElement {
+    splide: Splide | null = null;
+
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      if (this.dataset.direction == "ttb") {
+        this.splide = new Splide(this, optionsTtb);
+      } else if (this.dataset.direction == "btt") {
+        this.splide = new Splide(this, optionsBtt);
+      } else {
+        throw new Error("direction not valid");
+      }
+      this.splide.mount({ Intersection, AutoScroll });
+    }
+
+    disconnectedCallback() {
+      this.splide?.destroy();
+    }
+  }
+  window.customElements.define("c2dev-techs-carousel", C2TechsCarousel);
+</script>
